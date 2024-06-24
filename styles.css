@@ -1,0 +1,286 @@
+/****************************
+        cursor
+ ****************************/    
+body{
+    margin: 0;
+    height: 100vh;
+    cursor: url('./imgs/icons8-3d-pointer-48.png'), auto; 
+    /* cursor: none; */
+}
+
+/****************************
+        navbar
+ ****************************/    
+.logo{
+    width: 150px;
+    display: inline-flex;
+    color: aliceblue;
+    transition: all 0.3s;
+}
+.nav-stuff:hover{
+    transform: translateY(-20px);
+    color: lightpink;
+    transition: all 0.1s;
+    background-color: orchid;
+    cursor: pointer;
+}
+.nav-bar-unique{
+    background-color: black;
+    width: 100%;
+}
+.nav-pills{
+    align-items: center;
+}
+.insta-logo{
+    width: 40px;
+}
+.link-logo{
+    width: 40px;
+}
+.git-logo{
+    width: 40px;
+}
+.col-lg-4 {
+    height: 100px;
+    align-items: center;
+    justify-self: center
+}
+.custom-nav .nav-link{
+    color:  white;
+}
+/****************************
+        Welcome design
+ ****************************/       
+.welcome-container{
+    /* border: 2px solid brown;  */
+    /* background-color: rgb(233, 226, 237); */
+    text-align: center;
+    display: grid;
+    font-family: "arial";
+    font-size: 24px;
+    place-items: center;
+    margin-bottom: 0;
+    padding: 0;
+
+}
+.texts-welcome{
+    display: inline-block;
+    /* border: 2px solid brown;   */
+
+}
+.typed{
+    /* color: #6d37b3; */
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3.5s steps(35,end) forwards infinite;
+    text-align: center;
+    width: 100vh;
+    font-weight: bold;
+}
+@keyframes typing{
+    from{width: 0}
+    to {width: 100%}
+}
+/****************************
+       cover page
+ ****************************/
+.dev-text{
+    /* border: 2px solid brown; */
+    /* background-color: rgb(233, 226, 237); */
+    height: 90vh;
+    width: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.inner-dev-text{
+    margin-top: 40%;
+    font-size: 5vh;
+    font-weight: bold;
+    transition: all 0.5s;
+    
+}
+.inner-dev-text:hover{
+    transform: translateY(-20px);
+    color: darkorchid;
+}
+.face-container{
+    border-radius: 50%;
+    height: 60vh;
+    width: 90vh;
+    /* border: 2px solid seagreen; */
+}
+.face-container .face{
+    width: 100%;    /* Make the image fill the container width */
+    height: auto;   /* Set height to auto to maintain aspect ratio */
+    display: block; 
+    border-radius: 50%;
+    transition: opacity 0.5s ease; /* smooth transition for the opacity */
+    
+}
+.face-visible {
+    opacity: 1; /* full visibility when this class is added */
+  }
+
+.adri-name-img{
+    font-size: large;
+}
+@media only screen and (max-width: 991px){
+    .dev-text{
+        display: none;
+    }
+    .face-container{
+        /* border: 3px solid green; */
+        height: 80vh; /* Adjust this if needed */
+        width: 20vh; /* Adjust this if needed */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .face{
+        /* border: 3px solid green; */
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover; /* or use 'contain' based on preference */
+    }
+     
+}
+
+/****************************
+      about me
+ ***************************/
+ .about-container{
+ 
+    background: black;
+    z-index: 0;
+}
+
+#about {
+    position:static;
+    height: 100vh;
+    background: url('./imgs/Hexagon.svg') repeat;
+    background-size: 400px;
+    z-index: 2; /* Ensures that #about content is above .bg */
+
+}
+#about p{
+
+    color: rgba(249, 248, 248, 0.673);   
+    width: 100%;
+    /* transition: color 0.3s ease; */
+}
+/* #about p.light-text {
+    color: white; /* Text color for when the light (mouse) is over it 
+*/
+.bg {
+    position: absolute;
+    margin-top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 260px;
+    width: 260px;
+    /* background: linear-gradient(90deg, #335bf4, #2ae9c9 100%); */
+    /* filter: blur(160px); */
+    /* z-index: 0; Lower than #about to stay in the background */
+  }
+  @media only screen and (max-width: 800px){
+    .bg {
+        position: absolute;
+        margin-top: 85%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        height: 260px;
+        width: 260px;
+        /* background: linear-gradient(90deg, #335bf4, #2ae9c9 100%); */
+        /* filter: blur(160px); */
+        /* z-index: 0; Lower than #about to stay in the background */
+      }
+  }
+/****************************
+      projects
+ ***************************/
+ 
+ .projects-text{
+    height: 90px;
+    font-size: 45px;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+ }
+.marketing{
+
+    height: 100vh;
+    width: 100vh;
+    justify-self: center;
+    align-items: center;
+    
+}
+
+#project{
+    margin-top: 0;
+    color: black;
+}
+.mentoning-img{
+    background-color: black;
+}
+
+/****************************
+      interests
+ ***************************/
+#interests{
+    height: 100vh;
+}
+ .interests-container{
+    height: 80vh;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+
+ }
+ .interests-container h2{
+    text-align: center;
+    margin-top: 50px;
+ }
+.interests-text{
+    color: white;
+    height: 90px;
+    font-size: 45px;
+
+    align-items: baseline;
+    font-weight: bold;
+    text-align: center;
+}
+.interest-items{
+    list-style: none;
+    color: white;
+    text-align: left;
+}
+.team-pic-container{
+    padding-right: 0;
+}
+.interests-container li{
+    font-size: xx-large;
+
+}
+.team-pic{
+    padding: 0;
+    margin: 0;
+}
+@media only screen and (max-width: 1000px){
+    .interests-container li{
+        font-size: medium;
+    
+    }
+    footer{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 800px){
+    .interests-container li{
+        font-size: large;
+    
+    }
+  }
